@@ -12,6 +12,8 @@ $color3 : #635C73;
 
 $color4 : #323232;
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap');
 
 
@@ -24,6 +26,40 @@ $color4 : #323232;
 
 
 
+@mixin btn-1 () {
+	color: #fff;
+	background-color: $color1;
+	padding: 12px 16px;
+	font-weight: bold;
+
+	&:hover {
+		background-color: #fff;
+		color: $color1;
+	}
+}
+
+
+@mixin breakpointt ($size : 'sm') {
+
+
+	@if  ($size == sm) {
+		@media screen and (min-width:320px) {
+			
+		}
+	}
+	@else if ($size == md) {
+		@media screen and (min-width:768px) {
+			
+		}
+	}
+	@else if ($size == lg){
+		@media screen and (min-width : 1200px) {
+			
+		}
+	}
+
+
+}
 
 
 .container {
@@ -206,7 +242,8 @@ html {
 }
 
 .features {
-	padding: 30px 0 ;
+	padding: 30px 0;
+
 	.container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -273,20 +310,48 @@ html {
 			&__text {}
 		}
 	}
+
 	&__description {
 		font-size: 14px;
-		color : #A291A5;
+		color: #A291A5;
 		text-align: center;
 		letter-spacing: 1px;
 	}
 }
 
-.pricing{
-	padding: 30px  0 ;
-	&__title{
+.pricing {
+	padding: 30px 0;
+
+	&__title {
 		text-align: center;
 		font-weight: bold;
-		color : #fff;
+		color: #fff;
 		margin-bottom: 24px;
 	}
+}
+
+.nav-mobile {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	&__logo {
+		width: 36px;
+	}
+
+	&__btn {
+		@mixin btn-1() {}
+	}
+
+	&__hamburger {
+		width: 36px;
+	}
+	&__list {
+		position: absolute;
+		width: 100%;
+		left : 0;
+	}
+	&__item{
+		color : #fff;
+	}
+
 }
