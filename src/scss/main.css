@@ -226,4 +226,24 @@ html {
   font-weight: bold;
   color: #fff;
   margin-bottom: 24px;
+}
+
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-mobile__logo {
+  width: 36px;
+}
+.nav-mobile__hamburger {
+  width: 36px;
+}
+.nav-mobile__list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.nav-mobile__item {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
