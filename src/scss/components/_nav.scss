@@ -1,7 +1,10 @@
 .nav {
 	height: 72px;
 	padding: 30px 0;
-
+	display: none;
+	@include breakpointt(md){
+		display: block;
+	}
 	.container {
 		display: flex;
 		justify-content: space-between;

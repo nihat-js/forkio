@@ -2,6 +2,12 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	@include breakpointt("md") {
+		display: none;
+	}
+
+
+	
 	&__logo {
 		width: 36px;
 	}
