@@ -1,0 +1,37 @@
+.features {
+	padding: 30px 0;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 20px;
+
+		&__title {
+			letter-spacing: 1px;
+			margin-bottom: 12px;
+			color: $color4;
+			font-size: 18px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			color: $color2;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		color: $color1;
+		margin-bottom: 12px;
+	}
+
+	&__editor {
+		width: 100%;
+
+	}
+}

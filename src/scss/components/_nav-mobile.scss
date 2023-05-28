@@ -1,0 +1,25 @@
+.nav-mobile {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	&__logo {
+		width: 36px;
+	}
+
+	&__btn {
+		@mixin btn-1() {}
+	}
+
+	&__hamburger {
+		width: 36px;
+	}
+	&__list {
+		position: absolute;
+		width: 100%;
+		left : 0;
+	}
+	&__item{
+		color : #fff;
+	}
+
+}
