@@ -5,18 +5,9 @@
 	transform: translateY(-25px);
 
 	&__button {
-		padding: 15px 25px;
-		border-radius: 12px;
-		background-color: $color1;
-		color: #fff;
-		font-weight: bold;
-		border: 1px solid $color1;
+		@include btn-1();
+		font-size: 22px;
 
-		&:hover {
-			border: 1px solid $color1;
-			background-color: #fff;
-			color: $color1;
-		}
 	}
 
 	&__text {

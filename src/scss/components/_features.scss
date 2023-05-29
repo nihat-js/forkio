@@ -3,7 +3,13 @@
 
 	.container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		@include breakpointt(sm){
+			grid-template-columns: repeat(1,1fr)
+		}
+		@include breakpointt (lg){
+			grid-template-columns: repeat(2,1fr);
+		}
+
 		gap: 3rem;
 	}
 
@@ -30,7 +36,7 @@
 		margin-bottom: 12px;
 	}
 
-	&__editor {
+	&__editor-img {
 		width: 100%;
 
 	}

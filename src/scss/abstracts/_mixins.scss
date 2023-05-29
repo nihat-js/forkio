@@ -1,8 +1,11 @@
 @mixin btn-1 () {
 	color: #fff;
 	background-color: $color1;
-	padding: 12px 16px;
+	padding: 12px 20px;
+	letter-spacing: 2px;
 	font-weight: bold;
+	border: none;
+	border-radius: 20px;
 
 	&:hover {
 		background-color: #fff;

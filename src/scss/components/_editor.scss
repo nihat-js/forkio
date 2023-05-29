@@ -16,13 +16,23 @@
 	}
 
 	&__stats {
-		display: flex;
+		display: grid;
+		align-items: center;
+		@include breakpointt(sm){
+			grid-template-columns: 1fr 1fr ;
+		}
+		@include breakpointt(md){
+			grid-template-columns: repeat(3,1fr);
+		}
 		justify-content: center;
 		gap: 20px;
 	}
 
 	&__item {
 		display: flex;
+			
+	
+		// flex-wrap: wrap;
 		align-items: center;
 		border: 1px solid #666;
 
