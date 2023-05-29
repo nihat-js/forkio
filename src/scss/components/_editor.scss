@@ -1,0 +1,125 @@
+.editor {
+  background: $whiteColor;
+  text-align: center;
+  padding-bottom: 70px;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  &__content {
+    margin: 0 auto;
+    transform: translate(0, -29px);
+    .btn-download {
+      background: $color1;
+      border: 2px solid $color1;
+      border-radius: 40px;
+      margin-bottom: 19px;
+      &:hover {
+        background: $whiteColor;
+        border: 2px solid $color1;
+        a {
+          color: $color1;
+        }
+      }
+      a {
+        @include text($fWeightBold, 21px, 22px);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $whiteColor;
+        padding: 11px 30px;
+      }
+    }
+    .editor__title {
+      @include text($fWeightNormal, 14px, 15px);
+      color: $color2;
+    }
+    .editor__main-text {
+      margin-top: 66px;
+      margin-bottom: 35px;
+      @include text($fWeightBold, 54px, 54px);
+      text-transform: uppercase;
+      color: $color3;
+    }
+    .editor__text {
+      font-family: "Lato", sans-serif;
+      @include text($fWeightNormal, 21px, 32px);
+      margin-bottom: 13px;
+      color: $color4;
+    }
+    .github-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 13px;
+      &__list {
+        display: flex;
+        column-gap: 15px;
+        .github-buttons__item {
+          display: flex;
+          align-items: center;
+          border: 1px solid #d5d5d5;
+          border-radius: 4px;
+          text-decoration: none;
+          text-shadow: 0 1px 0 #fff;
+          padding-right: 5px;
+          .github-buttons__link {
+            @include text($fWeightBold, 16px, 22px);
+            margin-right: 5px;
+            color: #333;
+            @extend .github-buttons__item;
+            background-color: #eee;
+            background-image: linear-gradient(#fcfcfc, #eee);
+            border: none;
+            border-radius: 0;
+            padding: 0 8px;
+            svg {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .editor {
+    &__content {
+      .btn-download {
+        a {
+          font-size: 18px;
+        }
+      }
+      .editor__main-text {
+        line-height: 28px;
+        font-size: 26px;
+      }
+      .editor__text {
+        line-height: 20px;
+        font-size: 14px;
+      }
+      .github-buttons__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;       
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .editor {
+    .editor__text {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .editor .editor__content,
+  .features .features__content,
+  .subscription .subscription__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

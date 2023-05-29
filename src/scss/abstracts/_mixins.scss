@@ -1,33 +1,36 @@
-@mixin btn-1 () {
-	color: #fff;
-	background-color: $color1;
-	padding: 12px 20px;
-	letter-spacing: 2px;
-	font-weight: bold;
-	border: none;
-	border-radius: 20px;
+@mixin btn-1() {
+  color: #fff;
+  background-color: $color1;
+  padding: 12px 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
 
-	&:hover {
-		background-color: #fff;
-		color: $color1;
-	}
+  &:hover {
+    background-color: #fff;
+    color: $color1;
+  }
 }
 
+@mixin breakpointt($size: "sm") {
+  $all: (
+    sm: "320px",
+    md: "768px",
+    lg: "1200px",
+  );
 
-@mixin breakpointt ($size : 'sm') {
-	$all : (sm : "320px",
-			md :"768px",
-			lg : "1200px",
-		);
+  @if (map-has-key($all, $size)) {
+    $size: map-get($all, $size);
 
-	@if (map-has-key($all, $size )) {
-		$size : map-get($all, $size );
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
+}
 
-		@media screen and (min-width: $size ) {
-			@content;
-		}
-	}
-
-
-
+@mixin text($fontWeight, $fontSize, $lineHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
 }

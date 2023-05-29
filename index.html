@@ -2,130 +2,355 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forkio</title>
-	<link rel="stylesheet" href="./dist/css/styles.min.css">
-	<script src="./dist/js/scripts.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forkio</title>
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <script src="./dist/js/scripts.min.js"></script>
 </head>
 
 <body>
 
-	<nav class="nav">
-		<div class="container">
+    <nav class="nav">
+        <div class="container">
 
-			<div class="nav__logo">
-				<img class="nav__logo__img" src="./dist/img/logo.svg" alt="">
-				<h1 class="nav__logo__text"> Forkio </h1>
-			</div>
+            <div class="nav__logo">
+                <img class="nav__logo__img" src="./dist/img/logo.svg" alt="">
+                <h1 class="nav__logo__text"> Forkio </h1>
+            </div>
 
-			<ul class="nav__list">
-				<li class="nav__item">Overview </li>
-				<li class="nav__item">About Fork </li>
-				<li class="nav__item">Buying Options </li>
-				<li class="nav__item">Support </li>
-			</ul>
+            <ul class="nav__list">
+                <li class="nav__item">Overview </li>
+                <li class="nav__item">About Fork </li>
+                <li class="nav__item">Buying Options </li>
+                <li class="nav__item">Support </li>
+            </ul>
 
-			<div class="nav__actions">
-				<button type="button" class="nav__btn">Buy Now </button>
-			</div>
+            <div class="nav__actions">
+                <button type="button" class="nav__btn">Buy Now </button>
+            </div>
 
-		</div>
+        </div>
 
-	</nav>
+    </nav>
 
 
-	<nav class="nav-mobile">
-		<div class="container">
+    <nav class="nav-mobile">
+        <div class="container">
 
-			<img class="nav-mobile__logo" src="./dist/img/logo.svg" alt="">
-			<button class="nav-mobile__btn"> Buy Now </button>
-			<img class="nav-mobile__hamburger" src="./dist/img/hamburger.svg" onclick="toggleMobileNav()" />
-			<ul class="nav-mobile__list">
-				<li class="nav-mobile__item nav-mobile__item--active"> Overview </li>
-				<li class="nav-mobile__item"> About Fork </li>
-				<li class="nav-mobile__item"> Buying Options </li>
-				<li class="nav-mobile__item"> Support </li>
-			</ul>
-		</div>
-	</nav>
+            <img class="nav-mobile__logo" src="./dist/img/logo.svg" alt="">
+            <button class="nav-mobile__btn"> Buy Now </button>
+            <img class="nav-mobile__hamburger" src="./dist/img/hamburger.svg" onclick="toggleMobileNav()" />
+            <ul class="nav-mobile__list">
+                <li class="nav-mobile__item nav-mobile__item--active"> Overview </li>
+                <li class="nav-mobile__item"> About Fork </li>
+                <li class="nav-mobile__item"> Buying Options </li>
+                <li class="nav-mobile__item"> Support </li>
+            </ul>
+        </div>
+    </nav>
 
-	<section class="hero">
-		<div class="container">
-			<h2 class="hero__title"> Fork App </h2>
-			<p class="hero__subtitle"> A real gamechanger in the world of web development </p>
-			<p class="hero__text"> v. 2.8 For Mac and Windows </p>
-		</div>
-	</section>
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero__title"> Fork App </h2>
+            <p class="hero__subtitle"> A real gamechanger in the world of web development </p>
+            <p class="hero__text"> v. 2.8 For Mac and Windows </p>
+        </div>
+    </section>
 
-  
-	
+    <!-- Task 2  starts here-->
+    <section class="editor">
+        <div class="container">
+            <div class="editor__content">
+                <button class="btn-download">
+                    <a href="#">
+                        Download For Free Now
+                    </a>
+                </button>
+                <h5 class="editor__title">
+                    Unlimited 30-Days Trial Period
+                </h5>
+                <h1 class="editor__main-text">
+                    Revolutionary editor
+                </h1>
+                <p class="editor__text">
+                    Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id
+                    metus id quam auctor molestie eget ut augue.
+                </p>
+                <div class="github-buttons">
+                    <ul class="github-buttons__list">
+                        <li class="github-buttons__item">
+                            <a href="#" class="github-buttons__link">
+                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                    data-view-component="true" class="octicon octicon-eye">
+                                    <path
+                                        d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z">
+                                    </path>
+                                </svg>
+                                Watch
+                            </a>
+                            1,397
+                        </li>
+                        <li class="github-buttons__item">
+                            <a href="#" class="github-buttons__link">
+                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                    data-view-component="true" class="octicon octicon-star d-inline-block mr-2">
+                                    <path
+                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                    </path>
+                                </svg>
 
-	
+                                Star
+                            </a>
+                            21,038
 
-	<section class="about">
-		<div class="container">
-			<h2 class="about__title">People are talking about Fork </h2>
-			<div class="about__box">
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-1.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
+                        </li>
+                        <li class="github-buttons__item">
+                            <a href="#" class="github-buttons__link">
+                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                    data-view-component="true" class="octicon octicon-repo-forked mr-2">
+                                    <path
+                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                    </path>
+                                </svg>
+                                Fork
+                            </a>
+                            4,391
+                        </li>
+                    </ul>
+                </div>
 
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-2.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
+            </div>
+        </div>
+    </section>
 
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-3.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
+    <section class="features">
+        <div class="features__content">
+            <div class="feature-list">
+                <div class="container">
+                    <h1 class="feature-header feature-header--hidden">&#60;Here is what you get&#62;</h1>
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="/dist/img/features-1.png" alt="">
+                        </div>
+                        <div class="feature-details">
+                            <h5 class="feature-title">
+                                Creatred to Make The Web Better
+                            </h5>
+                            <p class="feature-text">
+                                Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+                                dignissim. Sed id metus id quam auctor molestie eget ut augue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="/dist/img/features-2.png" alt="">
+                        </div>
+                        <div class="feature-details">
+                            <h5 class="feature-title">
+                                Creatred to Make The Web Better
+                            </h5>
+                            <p class="feature-text">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="/dist/img/features-3.png" alt="">
+                        </div>
+                        <div class="feature-details">
+                            <h5 class="feature-title">
+                                Creatred to Make The Web Better
+                            </h5>
+                            <p class="feature-text">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="/dist/img/features-4.png" alt="">
+                        </div>
+                        <div class="feature-details">
+                            <h5 class="feature-title">
+                                Creatred to Make The Web Better
+                            </h5>
+                            <p class="feature-text">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-4.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
+            </div>
+            <div class="feature-header__wrapper">
+                <h1 class="feature-header">&#60;Here is what you get&#62;</h1>
+                <div class="img-box">
+                    <img src="/dist/img/editor-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Task 2 ends here -->
 
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-5.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
 
-				<div class="about__item">
-					<div class="about__item__logo">
-						<img src="./dist/img/about-6.svg" alt="">
-					</div>
-					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
-						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-				</div>
+    <section class="about">
+        <div class="container">
+            <h2 class="about__title">People are talking about Fork </h2>
+            <div class="about__box">
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-1.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
 
-			</div>
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-2.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
 
-			<p class="about__info"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet
-				id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque
-				penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-			<hr>
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-3.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
 
-		</div>
-	</section>
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-4.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
 
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-5.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
+
+                <div class="about__item">
+                    <div class="about__item__logo">
+                        <img src="./dist/img/about-6.svg" alt="">
+                    </div>
+                    <p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
+                        dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
+
+            </div>
+
+            <p class="about__info"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae
+                aliquet
+                id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <hr>
+
+        </div>
+    </section>
+
+
+    <!-- Task 2  starts here-->
+    <section class="subscription">
+        <div class="container ">
+            <div class="subscription__wrapper">
+                <h1 class="subscription__title">
+                    Fork Subscription Pricing
+                </h1>
+                <div class="purchase__wrapper">
+                    <div class="purchase__item">
+                        <div class="product-header">
+                            <h3 class="product-title">Students</h3>
+                        </div>
+                        <div class="product-body">
+                            <h2 class="product-price">
+                                $29
+                            </h2>
+                            <span class="product-text">per month</span>
+                            <div class="line"></div>
+                            <h5 class="product-desctiption">Personal License</h5>
+                            <button class="product-btn">
+                                purchase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="purchase__item">
+                        <div class="product-header">
+                            <h3 class="product-title">professional</h3>
+                        </div>
+                        <div class="product-body">
+                            <h2 class="product-price">
+                                $59
+                            </h2>
+                            <span class="product-text">per month</span>
+                            <div class="line"></div>
+                            <h5 class="product-desctiption">Professional License </br> Email Support</h5>
+                            <button class="product-btn">
+                                purchase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="purchase__item purchase__item--large">
+                        <div class="product-header">
+                            <h3 class="product-title">agency</h3>
+                        </div>
+                        <div class="product-body">
+                            <h2 class="product-price">
+                                $99
+                            </h2>
+                            <span class="product-text">per month</span>
+                            <div class="line"></div>
+                            <h5 class="product-desctiption">1-12 Team Members </br> Phone Support</h5>
+                            <button class="product-btn">
+                                purchase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="purchase__item">
+                        <div class="product-header">
+                            <h3 class="product-title">enterprise</h3>
+                        </div>
+                        <div class="product-body">
+                            <h2 class="product-price">
+                                $159
+                            </h2>
+                            <span class="product-text">per month</span>
+                            <div class="line"></div>
+                            <h5 class="product-desctiption">Unlimited Team Members </br>
+                                24/ 7 Phone Support</h5>
+                            <button class="product-btn">
+                                purchase
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Task 2 ends here -->
 
 
 </body>
