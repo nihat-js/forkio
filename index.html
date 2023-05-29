@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Forkio</title>
-	<link rel="stylesheet" href="./src/scss//main.css">
-	<script src="./src//js/index.js"></script>
+	<link rel="stylesheet" href="./dist/css/styles.min.css">
+	<script src="./dist/js/scripts.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 		<div class="container">
 
 			<div class="nav__logo">
-				<img class="nav__logo__img" src="./src/img/logo.svg" alt="">
+				<img class="nav__logo__img" src="./dist/img/logo.svg" alt="">
 				<h1 class="nav__logo__text"> Forkio </h1>
 			</div>
 
@@ -39,9 +39,9 @@
 	<nav class="nav-mobile">
 		<div class="container">
 
-			<img class="nav-mobile__logo" src="./src/img/logo.svg" alt="">
+			<img class="nav-mobile__logo" src="./dist/img/logo.svg" alt="">
 			<button class="nav-mobile__btn"> Buy Now </button>
-			<img class="nav-mobile__hamburger" src="./src/img/hamburger.svg" />
+			<img class="nav-mobile__hamburger" src="./dist/img/hamburger.svg" onclick="toggleMobileNav()" />
 			<ul class="nav-mobile__list">
 				<li class="nav-mobile__item nav-mobile__item--active"> Overview </li>
 				<li class="nav-mobile__item"> About Fork </li>
@@ -59,103 +59,10 @@
 		</div>
 	</section>
 
-	<section class="download">
-		<button class="download__button"> Download For Free Now </button>
-		<p class="download__text"> Unlimited 30-Days Trial Period </p>
-	</section>
+  
+	
 
-	<section class="editor">
-		<h2 class="editor__title"> Revolutionary Editor </h2>
-		<p class="editor__subtitle"> Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
-			dignissim. Sed id metus id
-			quam auctor molestie eget ut augue. </p>
-		<div class="editor__stats">
-			<div class="editor__item">
-				<div>
-					<img src="./src/img/github-watch.svg" alt="">
-					<p> Watch </p>
-				</div>
-				<p class="number"> 1300 </p>
-			</div>
-
-			<div class="editor__item">
-				<div>
-					<img src="./src/img/github-star.svg" alt="">
-					<p> Star </p>
-				</div>
-				<p class="number"> 21,920 </p>
-			</div>
-
-			<div class="editor__item">
-				<div>
-					<img src="./src/img/github-fork.svg" alt="">
-					<p> Fork </p>
-				</div>
-				<p class="number"> 4,391 </p>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="features">
-		<div class="container">
-			<div class="features__left">
-
-				<div class="features__item">
-					<img src="./src/img/features-1.svg" alt="">
-					<div>
-						<h4 class="features__item__title"> Creatred to Make The Web Better </h4>
-						<p class="features__item__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
-							dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
-						</p>
-					</div>
-				</div>
-
-				<div class="features__item">
-					<img src="./src/img/features-2.svg" alt="">
-					<div>
-						<h4 class="features__item__title"> Incredibly Powerful Tool </h4>
-						<p class="features__item__text">
-							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
-							placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
-						</p>
-					</div>
-				</div>
-
-				<div class="features__item">
-					<img src="./src/img/features-3.svg" alt="">
-					<div>
-						<h4 class="features__item__title"> Experimental Stuff </h4>
-						<p class="features__item__text">
-							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
-							placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
-						</p>
-					</div>
-				</div>
-
-				<div class="features__item">
-					<img src="./src/img/features-4.svg" alt="">
-					<div>
-						<h4 class="features__item__title"> Creatred to Make The Web Better </h4>
-						<p class="features__item__text">
-							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
-							placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
-						</p>
-					</div>
-				</div>
-
-
-
-			</div>
-			<div class="features__right">
-				<h3 class="features__title">
-					<Here is what you get>
-				</h3>
-				<img class="features__editor-img" src="./src/img/editor-1.jpg" alt="">
-			</div>
-
-		</div>
-	</section>
+	
 
 	<section class="about">
 		<div class="container">
@@ -163,7 +70,7 @@
 			<div class="about__box">
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-1.svg" alt="">
+						<img src="./dist/img/about-1.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -171,7 +78,7 @@
 
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-2.svg" alt="">
+						<img src="./dist/img/about-2.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -179,7 +86,7 @@
 
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-3.svg" alt="">
+						<img src="./dist/img/about-3.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -187,7 +94,7 @@
 
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-4.svg" alt="">
+						<img src="./dist/img/about-4.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -195,7 +102,7 @@
 
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-5.svg" alt="">
+						<img src="./dist/img/about-5.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -203,7 +110,7 @@
 
 				<div class="about__item">
 					<div class="about__item__logo">
-						<img src="./src/img/about-6.svg" alt="">
+						<img src="./dist/img/about-6.svg" alt="">
 					</div>
 					<p class="about__item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
 						dignissim magna. Sed varius urna et pulvinar venenatis. </p>
@@ -211,65 +118,15 @@
 
 			</div>
 
-			<p class="about__info"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
+			<p class="about__info"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet
+				id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque
+				penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 			<hr>
 
 		</div>
 	</section>
 
-	<section class="pricing">
-		<div class="container">
-			<h2 class="pricing__title"> Fork Subscription Pricing </h2>
-			<div class="pricing__box">
-				<div class="pricing__item">
-					<h2 class="pricing__item__title">Student </h2>
-					<p class="pricing__item__price"> $29 </p>
-					<p class="pricing__item__month"> Per Month </p>
-					<p class="pricing__item__seperator">---</p>
-					<ul class="pricing__item__list">
-						<li> Personal license </li>
-					</ul>
-				</div>
 
-				<div class="pricing__item">
-					<h2 class="pricing__item__title">Professional </h2>
-					<p class="pricing__item__price"> $59 </p>
-					<p class="pricing__item__month"> Per Month </p>
-					<p class="pricing__item__seperator">---</p>
-					<ul class="pricing__item__list">
-						<li> Personal license </li>
-						<li> Email Support</li>
-					</ul>
-					<button class="pricing__item__button">Purchase </button>
-				</div>
-
-				<div class="pricing__item">
-					<h2 class="pricing__item__title">Agency </h2>
-					<p class="pricing__item__price"> $99 </p>
-					<p class="pricing__item__month"> Per Month </p>
-					<p class="pricing__item__seperator">---</p>
-					<ul class="pricing__item__list">
-						<li> 1-12 Team Member</li>
-						<li> Phone Support</li>
-					</ul>
-					<button class="pricing__item__button">Purchase </button>
-				</div>
-
-				<div class="pricing__item">
-					<h2 class="pricing__item__title">Enterprise </h2>
-					<p class="pricing__item__price"> $159 </p>
-					<p class="pricing__item__month"> Per Month </p>
-					<p class="pricing__item__seperator">---</p>
-					<ul class="pricing__item__list">
-						<li> Unlimited Team Members </li>
-						<li> 24/7 Phone Support </li>
-					</ul>
-					<button class="pricing__item__button">Purchase </button>
-				</div>
-
-			</div>
-		</div>
-	</section>
 
 	<!-- aa -->
 </body>

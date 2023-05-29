@@ -126,6 +126,7 @@ html {
   width: 36px;
 }
 .nav-mobile__list {
+  display: none;
   position: absolute;
   width: 100%;
   left: 0;
@@ -144,36 +145,11 @@ html {
   border-left: 5px solid #8D81AC;
 }
 
-.download {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translateY(-25px);
-}
-.download__button {
-  color: #fff;
-  background-color: #8D81AC;
-  padding: 12px 20px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  font-size: 22px;
-}
-.download__button:hover {
-  background-color: #fff;
-  color: #8D81AC;
-}
-.download__text {
-  margin-top: 15px;
-  color: #848E97;
-}
-
 .hero {
   margin-top: -72px;
   height: 700px;
   padding: 130px 0;
-  background-image: url("../../img/hero-1.jpg");
+  background-image: url("../img/hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -202,101 +178,9 @@ html {
   text-align: center;
 }
 
-.editor__title {
-  font-size: 54px;
-  font-weight: bold;
-  color: #635C73;
-  margin-bottom: 16px;
-  text-align: center;
-}
-.editor__subtitle {
-  color: #323232;
-  letter-spacing: 1px;
-  max-width: 600px;
-  margin: 16px auto;
-  text-align: center;
-}
-.editor__stats {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-@media screen and (min-width: 320px) {
-  .editor__stats {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 768px) {
-  .editor__stats {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.editor__item {
-  display: flex;
-  align-items: center;
-  border: 1px solid #666;
-}
-.editor__item div {
-  padding: 10px 15px;
-  background-color: #fbfbfb;
-  display: flex;
-}
-.editor__item div img {
-  width: 24px;
-}
-.editor__item div p {
-  font-weight: bold;
-}
-.editor__item .number {
-  padding: 10px 15px;
-  background-color: #fff;
-  border: 1px solid #666;
-}
-
-.features {
-  padding: 30px 0;
-}
-.features .container {
-  display: grid;
-  gap: 3rem;
-}
-@media screen and (min-width: 320px) {
-  .features .container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.features__item {
-  display: flex;
-  gap: 20px;
-}
-.features__item__title {
-  letter-spacing: 1px;
-  margin-bottom: 12px;
-  color: #323232;
-  font-size: 18px;
-}
-.features__item__subtitle {
-  font-size: 16px;
-  color: #848E97;
-}
-.features__title {
-  font-size: 36px;
-  color: #8D81AC;
-  margin-bottom: 12px;
-}
-.features__editor-img {
-  width: 100%;
-}
-
 .about {
   padding: 30px 0;
-  background-image: url("../../img/about-background.jpg");
+  background-image: url("../img/about-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   height: 700px;
