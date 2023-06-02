@@ -100,14 +100,16 @@ function watcher() {
 }
 
 
-
-exports.build = gulp.series(
+gulp.task('build', gulp.series(
     cleanDist,
     gulp.parallel(scssTask, compileJs),
     optimizeImg
-)
+))
 
-exports.dev = gulp.series(
-    gulp.parallel(browsersyncServer, watcher),
+gulp.task('dev', gulp.series(
+    'build',
+    gulp.parallel(
+        watcher, browsersyncServer
+    ),
     reloadPage
-)
+))

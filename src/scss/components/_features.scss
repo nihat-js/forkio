@@ -111,3 +111,12 @@
     }
   }
 }
+
+
+
+@media (min-width: 1201px) {
+  .features .features__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

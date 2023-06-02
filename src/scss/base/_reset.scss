@@ -9,10 +9,33 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
-
 
 html {
   font-family: "Lato", sans-serif;
+}
+
+@media (min-width: 320px) {
+  body {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
