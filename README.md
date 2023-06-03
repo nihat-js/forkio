@@ -39,7 +39,6 @@ Gulp.js, Sass
 
 ```bash
   npm install
-  npm run build
   npm run dev
 ```
 
@@ -47,5 +46,3 @@ Gulp.js, Sass
 ## Demo
 
 https://pages.github.com/
-
-

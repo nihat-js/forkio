@@ -12,6 +12,8 @@
       border: 2px solid $color1;
       border-radius: 40px;
       margin-bottom: 19px;
+      width: 390px;
+      height: 62px;
       &:hover {
         background: $whiteColor;
         border: 2px solid $color1;
@@ -21,11 +23,7 @@
       }
       a {
         @include text($fWeightBold, 21px, 22px);
-        display: flex;
-        align-items: center;
-        text-align: center;
         color: $whiteColor;
-        padding: 11px 30px;
       }
     }
     .editor__title {
@@ -49,7 +47,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 13px;
       &__list {
         display: flex;
         column-gap: 15px;
@@ -83,13 +80,19 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .editor {
+    padding-bottom: 88px;
     &__content {
       .btn-download {
+        width: 290px;
+        height: 45px;
+        margin-bottom: 12px;
         a {
           font-size: 18px;
         }
       }
       .editor__main-text {
+        margin-top: 79px;
+        margin-bottom: 27px;
         line-height: 28px;
         font-size: 26px;
       }
@@ -98,9 +101,10 @@
         font-size: 14px;
       }
       .github-buttons__list {
+        padding-top: 36px;
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 20px;       
+        row-gap: 20px;
       }
     }
   }
@@ -108,9 +112,13 @@
 
 @media (min-width: 481px) and (max-width: 992px) {
   .editor {
+    .editor__main-text {
+      font-size: 42px;
+      margin-top: 93px;
+      margin-bottom: 33px;
+    }
     .editor__text {
       margin-bottom: 24px;
     }
   }
 }
-

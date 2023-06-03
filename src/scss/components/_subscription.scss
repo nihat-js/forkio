@@ -100,13 +100,15 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .subscription {
+    padding-top: 14px;
     &__wrapper {
       .subscription__title {
         font-size: 28px;
         line-height: 42px;
       }
       .purchase__wrapper {
-        margin-top: 30px;
+        margin-top: 32px;
+        row-gap: 18px;
         .purchase__item {
           transform: scale(0.9);
           .product-body .product-price,
@@ -141,8 +143,12 @@
 @media (min-width: 481px) and (max-width: 992px) {
   .subscription {
     &__wrapper {
+      .subscription__title {
+        font-size: 42px;
+        line-height: 44px;
+      }
       .purchase__wrapper {
-        grid-template-columns: repeat(2,  minmax(auto, 210px));
+        grid-template-columns: repeat(2, minmax(auto, 210px));
         margin-top: 39px;
         column-gap: 25px;
         justify-content: center;
